@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+	float weight,height;
+	printf("輸入體重(kg):");
+	scanf("%f",&weight);
+	printf("輸入身高(m):");
+	scanf("%f",&height);
+	printf("您的BMI是:%f\n",weight/(height*height));
+	float BMI=weight/(height*height);
+	if(BMI<18.5)
+		printf("體重過輕\n");
+	else if(BMI>24)
+		printf("體重過重\n");
+	else
+		printf("體重正常\n");
+	system("pause");
+	return 0;
+} 
